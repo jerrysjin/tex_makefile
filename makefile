@@ -8,7 +8,7 @@ default:
 	@echo "Enter one of the following:"
 	@echo "  make pdflatex            compile using pdflatex -> pdf"
 	@echo "  make dvipdf              compile using latex -> dvipdfm -> pdf"
-	@echo "  make pdpdf               using latex -> dvips -> ps2pdf -> pdf"
+	@echo "  make pspdf               using latex -> dvips -> ps2pdf -> pdf"
 	@echo "  make clean               clean related files"
 	@echo "  make clean-all           clean this directory"
 
