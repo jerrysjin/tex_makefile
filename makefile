@@ -1,9 +1,6 @@
 # specify the tex file name here without extension '.tex'
 TEXFILE=report
 
-# specify the bib file name here without extension '.bib'
-BIBFILE=report
-
 default:
 	@echo "Enter one of the following:"
 	@echo "  make pdflatex            compile using pdflatex -> pdf"
@@ -21,14 +18,14 @@ clean-all:
 # compile using pdflatex -> pdf
 pdflatex:
 	pdflatex $(TEXFILE) 
-	bibtex $(BIBFILE)
+	bibtex $(TEXFILE)
 	pdflatex $(TEXFILE)
 	pdflatex $(TEXFILE)
 
 # compile using latex -> dvi -> pdf
 dvipdf:
 	latex $(TEXFILE)
-	bibtex $(BIBFILE)
+	bibtex $(TEXFILE)
 	latex $(TEXFILE)
 	latex $(TEXFILE)
 	dvipdfm $(TEXFILE).dvi
@@ -36,7 +33,7 @@ dvipdf:
 # compile using latex -> dvi -> ps -> pdf
 pspdf:
 	latex $(TEXFILE)
-	bibtex $(BIBFILE)
+	bibtex $(TEXFILE)
 	latex $(TEXFILE)
 	latex $(TEXFILE)
 	dvips $(TEXFILE).dvi
