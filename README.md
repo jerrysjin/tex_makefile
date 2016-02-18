@@ -4,11 +4,6 @@ The first line of this make file defines the tex file name, which should be edit
 	# specify the tex file name here without extension '.tex'
 	TEXFILE=report
 	
-The second line of this make file defines the bib file name, which should be edited accordingly. 
-	
-	# specify the bib file name here without extension '.bib'
-	BIBFILE=report
-	
 **Usage**
 
 Clean the current folder
