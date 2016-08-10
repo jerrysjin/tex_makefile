@@ -1,15 +1,14 @@
 #Makefile for Latex
-The first line of this make file defines the tex file name, which should be edited accordingly. 
+The first line of this make file defines the tex file name, which should be edited accordingly before compiling files. 
 	
 	# specify the tex file name here without extension '.tex'
 	TEXFILE=report
 	
-The second line of this make file defines the bib file name, which should be edited accordingly. 
-	
-	# specify the bib file name here without extension '.bib'
-	BIBFILE=report
-	
 **Usage**
+
+This is used to generate pdf files from tex project.
+
+Commands with the suffix '-full' indicate both tex and bibliography files will be compiled. Commands without it means only tex files will be compiled.  
 
 Clean the current folder
 
@@ -22,17 +21,26 @@ Clean the current folder
 	make clean-all
 	
 	
-Compile with pdflatex tex->pdf
+Compile pdf using pdflatex
 
-	# tex->pdf
 	make pdflatex
+	make pdflatex-full
 	
-Compile with dvipdf
+Compile pdf using latex -> dvipdfm
 
-	# tex->dvi->pdf
 	make dvipdf
+	make dvipdf-full
 	
-Compile with pspdf
+Compile pdf using latex -> dvips -> ps2pdf
 
+	make pspdf
+	make pspdf-full
+	
+Compile bibliography
+
+<<<<<<< HEAD
+	make bib
+=======
 	# tex->dvi->ps->pdf
 	make pspdf	
+>>>>>>> origin/master
