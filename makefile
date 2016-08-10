@@ -16,11 +16,6 @@ default:
 	@echo "Clean current directory"
 	@echo "  - make clean               clean related files"
 	@echo "  - make clean-all           clean this directory"
-	@echo "  make pdflatex            compile using pdflatex -> pdf"
-	@echo "  make dvipdf              compile using latex -> dvipdfm -> pdf"
-	@echo "  make pspdf               using latex -> dvips -> ps2pdf -> pdf"
-	@echo "  make clean               clean related files"
-	@echo "  make clean-all           clean this directory"
 
 clean:
 	rm -f ${TEXFILE}.{ps,pdf,log,aux,out,dvi,bbl,blg}

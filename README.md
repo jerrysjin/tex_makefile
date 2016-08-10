@@ -38,9 +38,4 @@ Compile pdf using latex -> dvips -> ps2pdf
 	
 Compile bibliography
 
-<<<<<<< HEAD
 	make bib
-=======
-	# tex->dvi->ps->pdf
-	make pspdf	
->>>>>>> origin/master
