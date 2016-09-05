@@ -21,7 +21,7 @@ clean:
 	rm -f ${TEXFILE}.{ps,pdf,log,aux,out,dvi,bbl,blg}
 
 clean-all:
-	rm -f *.log *.bak *.aux *.bbl *.blg *.idx *.toc *.out *.pdf *~
+	rm -f *.log *.bak *.aux *.bbl *.blg *.idx *.toc *.out *.pdf *.dvi *~
 
 # compile pdf using pdflatex -> pdf
 pdflatex-full:
